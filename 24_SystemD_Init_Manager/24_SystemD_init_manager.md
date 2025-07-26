@@ -21,7 +21,7 @@ SystemD is a full replacement for init with parallel starting of services, reduc
 ## How to integrate SystemD in Yocto?
 
 ```bash
-DISTRO_FEATURES:append = " systemd"
+DISTRO_FEATURES:append = " systemd usrmerge"
 VIRTUAL-RUNTIME_init_manager = "systemd"
 DISTRO_FEATURES_BACKFILL_CONSIDERED += "sysvinit"
 VIRTUAL-RUNTIME_initscripts = "systemd-compat-units"
